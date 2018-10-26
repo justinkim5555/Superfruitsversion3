@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+        <!-- Optional theme --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript --> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="styled2p.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+      
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Dashboard</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#">Orders</a></li>
+            <li class="active"><a href="#">Products</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log off</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <input class="search"type="text" placeholder="Search..">
+        
+        </button>
+        <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search">
+            <span class="sr-only">Search</span>
+          </span>
+        </button>
+
+        <button id="button" type="button" class="btn btn-primary">Add new product</button>
+
+      <table class="table table-bordered">
+          <tr class="active">
+              <th>Picture</th>
+              <th>ID</th> 
+              <th>Name</th>
+              <th>Inventory Count</th>
+              <th>Quantity sold</th>
+              <th>action</th>
+
+            </tr>
+            <tr>
+              <td></td>
+              <td>1</td> 
+              <td>Product 1</td>
+              <td>300</td>
+              <td>150</td> 
+              <td><a href="#">edit</a><br><a href="#">delete</a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>2</td> 
+              <td>Product 2</td>
+              <td>254</td>
+              <td>200</td>  
+              <td><a href="#">edit</a><br><a href="#">delete</a></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>3</td> 
+              <td>Product 3</td>
+              <td>420</td>
+              <td>3450</td>  
+              <td><a href="#">edit</a><br><a href="#">delete</a></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>4</td> 
+              <td>Product 4</td>
+              <td>83</td>
+              <td>4302</td>   
+              <td><a href="#">edit</a><br><a href="#">delete</a></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td>5</td> 
+              <td>Product 5</td>
+              <td>15</td>
+              <td>205</td>  
+              <td><a href="#">edit</a><br><a href="#">delete</a></td>
+          </tr>
+      </table>
+    
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+        <!-- Optional theme --> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript --> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="styled1.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+      
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Dashboard</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Orders</a></li>
+            <li><a href="/dashboard2_products">Products</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log off</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <input class="search"type="text" placeholder="Search..">
+
+        </button>
+        <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search">
+            <span class="sr-only">Search</span>
+          </span>
+        </button>
+
+      <select class="form-control">
+          <option>Show all</option>
+          <option>Order in process</option>
+          <option>Shipped</option>
+          <option>Cancelled</option>
+      </select>
+
+      <table class="table table-bordered">
+          <tr class="active">
+              <th>Order ID</th>
+              <th>Name</th> 
+              <th>Date</th>
+              <th>Billing Address</th>
+              <th>Total</th>
+              <th>Status</th>
+
+            </tr>
+            <tr>
+              <td><a href="/dashboard3_orderID">15</a></td>
+              <td>Michael Jordan</td> 
+              <td>9/5/2018</td>
+              <td>650 South Fair Oack Av, CA, 95011</td>
+              <td>$37.99</td> 
+              <td>Order in Process</td>
+            </tr>
+            <tr>
+              <td><a href="#">14</a></td>
+              <td>Roger Federer</td> 
+              <td>9/5/2018</td>
+              <td>650 South Fair Oack Av, CA, 95011</td>
+              <td>$149.99</td>  
+              <td>Shipped</td>
+          </tr>
+          <tr>
+              <td><a href="#">13</a></td>
+              <td>Usain Bolt</td> 
+              <td>9/5/2018</td>
+              <td>650 South Fair Oack Av, CA, 95011</td>
+              <td>$45.99</td>  
+              <td>Shipped</td>
+          </tr>
+          <tr>
+              <td><a href="#">12</a></td>
+              <td>Leo Messi</td> 
+              <td>9/5/2018</td>
+              <td>650 South Fair Oack Av, CA, 95011</td>
+              <td>$30.99</td>   
+              <td>Cancelled</td>
+          </tr>
+          <tr>
+              <td><a href="#">11</a></td>
+              <td>Michael Phelps</td> 
+              <td>9/5/2018</td>
+              <td>650 South Fair Oack Av, CA, 95011</td>
+              <td>$80.00</td>  
+              <td>Order in Process</td>
+          </tr>
+      </table>
+    
+    </div>
+
+  </body>
+
+</html>

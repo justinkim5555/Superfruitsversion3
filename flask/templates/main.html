@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+    <body>
+    <div class="container">
+
+    <button type="button" id="fetchbutton" class="btn btn-primary">Fetch request from localhost/funny_pictures</button>
+    <div id='showimages'></div>
+
+
+
+
+
+      <h2>First Page</h2>
+      <p>Find all users whose name starts with <input type='text' id='starts_with' name='starts_with' value=''></p>
+      <div id='placeholder'>
+      </div>
+    <script>
+
+    $('#fetchbutton').click(function() {
+        $.ajax({
+            method:"POST",
+            url:"/funny_pictures_api",
+            data:"",
+
+
+
+        })
+        .done(function( response ) 
+            { console.log('received response:', response); 
+            $('#showimages').html(response);
+
+    });
+ });
+
+
+
+
+
+
+   $('#starts_with').keyup(function() {
+      console.log('preparing to send an Ajax request with the starts_with value of', $('#starts_with').val());
+      $.ajax({
+         method: "POST",
+         url: "/users/api",
+         data: { 
+                    starts_with: $('#starts_with').val()
+               }
+      })
+      .done(function( response ) {
+         console.log('received response:', response);
+         $('#placeholder').html(response);
+      });
+   });
+
+</script>
+     
+    </div>
+    </body>
+
+</html>
+
